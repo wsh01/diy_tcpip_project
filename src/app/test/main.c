@@ -3,19 +3,22 @@
  * @author wang
  * @brief 测试主程序，完成一些简单的测试主程序
  * @version 0.1
- * @date 2022-10-23
+ * @date 2023-8-15
  *
- * @copyright Copyright (c) 2022
+ * @copyright Copyright (c) 2023
  * @note 
  */
 #include <stdio.h>
 #include "sys_plat.h"
+
+static sys_sem_t sem;
 
 void thread1_entry(void * arg)
 {
 	while(1)
 	{
 		plat_printf("this is thread1: %s \n",(char *)arg);
+		sys_sem_notify(sem);
 		sys_sleep(1000);
 	}
 }
@@ -24,13 +27,15 @@ void thread2_entry(void * arg)
 {
 	while(1)
 	{
+		sys_sem_wait(sem, 0);
 		plat_printf("this is thread2: %s \n", (char *)arg);
-		sys_sleep(1000);
 	}
 }
 
 int main (void) 
 {
+	sem = sys_sem_create(0);
+
 	sys_thread_create(thread1_entry, "AAAA");//创建一个新线程
 	sys_thread_create(thread2_entry, "BBBB");
 

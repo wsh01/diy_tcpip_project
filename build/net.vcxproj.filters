@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\start\src\app\test\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\start\src\plat\sys_plat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\start\src\plat\sys_plat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\TCPIP\diy_tcpip_myproject\start\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F9314A07-A7C9-3055-B8A8-B0AD78BFA92D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CF9E5949-5CF7-339B-A92B-8F16A49516EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

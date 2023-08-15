@@ -1,0 +1,10 @@
+^E:\TCPIP\DIY_TCPIP_MYPROJECT\START\BUILD\CMAKEFILES\EEA8F458BEDA5246399C315DC50F7B52\GENERATE.STAMP.RULE
+setlocal
+D:\cmake\bin\cmake.exe -SE:/TCPIP/diy_tcpip_myproject/start -BE:/TCPIP/diy_tcpip_myproject/start/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/TCPIP/diy_tcpip_myproject/start/build/net.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

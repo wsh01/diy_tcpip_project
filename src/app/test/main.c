@@ -12,9 +12,18 @@
 #include "sys_plat.h"
 
 static sys_sem_t sem;
+static sys_mutex_t mutex;
+static int count = 0;
 
 void thread1_entry(void * arg)
 {
+	for (int i = 0; i < 100000; i++)
+	{
+		sys_mutex_lock(mutex);
+		count++;
+		sys_mutex_unlock(mutex);
+	}
+	plat_printf("thread 1: count = %d\n", count);
 	while(1)
 	{
 		plat_printf("this is thread1: %s \n",(char *)arg);
@@ -25,6 +34,13 @@ void thread1_entry(void * arg)
 
 void thread2_entry(void * arg)
 {
+	for (int i = 0; i < 100000; i++)
+	{
+		sys_mutex_lock(mutex);
+		count--;
+		sys_mutex_unlock(mutex);
+	}
+	plat_printf("thread 2: count = %d\n", count);
 	while(1)
 	{
 		sys_sem_wait(sem, 0);
@@ -35,7 +51,7 @@ void thread2_entry(void * arg)
 int main (void) 
 {
 	sem = sys_sem_create(0);
-
+	mutex = sys_mutex_create();
 	sys_thread_create(thread1_entry, "AAAA");//创建一个新线程
 	sys_thread_create(thread2_entry, "BBBB");
 

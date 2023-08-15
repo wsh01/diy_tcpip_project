@@ -27,7 +27,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/TCPIP/diy_tcpip_myproject/start/build"
+			"value" : "e:/TCPIP/diy_tcpip_myproject/project/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/TCPIP/diy_tcpip_myproject/start"
+			"value" : "E:/TCPIP/diy_tcpip_myproject/project"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1015,7 +1015,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/TCPIP/diy_tcpip_myproject/start/build"
+			"value" : "E:/TCPIP/diy_tcpip_myproject/project/build"
 		},
 		{
 			"name" : "net_IS_TOP_LEVEL",
@@ -1039,7 +1039,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/TCPIP/diy_tcpip_myproject/start"
+			"value" : "E:/TCPIP/diy_tcpip_myproject/project"
 		}
 	],
 	"kind" : "cache",

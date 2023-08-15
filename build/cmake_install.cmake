@@ -1,4 +1,4 @@
-# Install script for directory: E:/TCPIP/diy_tcpip_myproject/start
+# Install script for directory: E:/TCPIP/diy_tcpip_myproject/project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/TCPIP/diy_tcpip_myproject/start/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/TCPIP/diy_tcpip_myproject/project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

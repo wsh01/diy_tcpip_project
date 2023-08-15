@@ -11,7 +11,29 @@
 #include <stdio.h>
 #include "sys_plat.h"
 
-int main (void) {
+void thread1_entry(void * arg)
+{
+	while(1)
+	{
+		plat_printf("this is thread1: %s \n",(char *)arg);
+		sys_sleep(1000);
+	}
+}
+
+void thread2_entry(void * arg)
+{
+	while(1)
+	{
+		plat_printf("this is thread2: %s \n", (char *)arg);
+		sys_sleep(1000);
+	}
+}
+
+int main (void) 
+{
+	sys_thread_create(thread1_entry, "AAAA");//创建一个新线程
+	sys_thread_create(thread2_entry, "BBBB");
+
 	pcap_t * pcap = pcap_device_open(netdev0_phy_ip, netdev0_hwaddr);//打开网络设备，IP地址，Mac地址
 	while (pcap)
 	{

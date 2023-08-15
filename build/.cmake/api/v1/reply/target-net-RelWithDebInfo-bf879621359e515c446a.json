@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/net.exe"
+			"path" : "RelWithDebInfo/net.exe"
 		},
 		{
-			"path" : "Debug/net.pdb"
+			"path" : "RelWithDebInfo/net.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -78,7 +78,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG"
 				}
 			],
 			"defines" : 
@@ -100,23 +100,23 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "E:/TCPIP/diy_tcpip_myproject/start"
+					"path" : "E:/TCPIP/diy_tcpip_myproject/project"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "E:/TCPIP/diy_tcpip_myproject/start/npcap/Include"
+					"path" : "E:/TCPIP/diy_tcpip_myproject/project/npcap/Include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "E:/TCPIP/diy_tcpip_myproject/start/src/net/net"
+					"path" : "E:/TCPIP/diy_tcpip_myproject/project/src/net/net"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "E:/TCPIP/diy_tcpip_myproject/start/src/plat"
+					"path" : "E:/TCPIP/diy_tcpip_myproject/project/src/plat"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "E:/TCPIP/diy_tcpip_myproject/start/src/app"
+					"path" : "E:/TCPIP/diy_tcpip_myproject/project/src/app"
 				}
 			],
 			"language" : "C",
@@ -147,7 +147,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -156,7 +156,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LIBPATH:E:\\TCPIP\\diy_tcpip_myproject\\start\\npcap\\Lib\\x64",
+				"fragment" : "-LIBPATH:E:\\TCPIP\\diy_tcpip_myproject\\project\\npcap\\Lib\\x64",
 				"role" : "libraryPath"
 			},
 			{

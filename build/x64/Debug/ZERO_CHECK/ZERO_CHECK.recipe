@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\TCPIP\diy_tcpip_myproject\start\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>E:\TCPIP\diy_tcpip_myproject\project\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

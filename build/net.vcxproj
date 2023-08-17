@@ -314,6 +314,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\app\test\main.c" />
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\net\exmsg.h" />
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\net\net.h" />
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\net\net_err.h" />
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\src\exmsg.c" />
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\src\net.c" />
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\net_plat.c" />
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\net_plat.h" />
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\sys_plat.c" />
     <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\sys_plat.h" />
   </ItemGroup>

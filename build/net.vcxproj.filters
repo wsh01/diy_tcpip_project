@@ -13,6 +13,9 @@
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\net_plat.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\netif_pcap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\sys_plat.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -28,6 +31,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\net_plat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\netif_pcap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\sys_plat.h">

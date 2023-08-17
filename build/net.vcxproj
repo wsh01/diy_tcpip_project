@@ -321,6 +321,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\src\net.c" />
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\net_plat.c" />
     <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\net_plat.h" />
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\netif_pcap.c" />
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\netif_pcap.h" />
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\sys_plat.c" />
     <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\plat\sys_plat.h" />
   </ItemGroup>

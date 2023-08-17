@@ -10,6 +10,7 @@
  */
 #include <stdio.h>
 #include "sys_plat.h"
+#include "net.h"
 
 static sys_sem_t sem;
 static sys_mutex_t mutex;

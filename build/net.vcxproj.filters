@@ -4,6 +4,9 @@
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\app\test\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\src\dbg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\src\exmsg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -21,6 +24,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\net\dbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="E:\TCPIP\diy_tcpip_myproject\project\src\net\net\exmsg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
